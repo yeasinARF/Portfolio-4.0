@@ -2978,3 +2978,56 @@ header {
         height: 360px;
     }
 }
+
+.skills-section {
+    background-color: #05091E;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+  }
+  
+  .skills-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  
+  .skills-title span {
+    color: rgb(145, 89, 197);
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .skill-card {
+    background-color: #1c1f2e;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 140px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .skill-card p {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px rgba(145, 89, 197, 0.5);
+  }
+  
