@@ -3008,4 +3008,20 @@ header {
     transform: translateY(-6px);
     box-shadow: 0 0 15px rgba(145, 89, 197, 0.4);
   }
-  
+  .carousel-control-prev i,
+.carousel-control-next i {
+    color: white !important;
+    font-size: 3rem;
+    background-color: rgba(145, 89, 197, 0.8); /* Purple background */
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(145, 89, 197, 0.8);
+    transition: all 0.3s ease;
+}
+
+.carousel-control-prev i:hover,
+.carousel-control-next i:hover {
+    background-color: rgba(145, 89, 197, 1);
+    box-shadow: 0 0 15px rgba(145, 89, 197, 1);
+    transform: scale(1.1);
+}
