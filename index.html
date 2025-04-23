@@ -744,60 +744,57 @@
     <!--Query Section Start-->
     <div id="hireMe" class="container" data-aos="fade-up" data-aos-duration="3000" data-aos-offset="300"
     style="padding-top:20px;">
-    <div class="text-white text-center pt-5">
-        <h5 style="font-family: sans-serif;color:rgb(145, 89, 197);">DON'T BE SHY !</h5>
-        <h1 style="padding-bottom: 68px;font-weight: 800;text-transform: uppercase;">GET IN <span
-                style="color:rgb(145, 89, 197) ;">TOUCH</span></h1>
-        <div class="mb-4" style="justify-content: center;align-items: center;display: flex;margin-top: -50px;">
-            <div style="width: 25px;height: 5px;background-color:rgb(145, 89, 197);border-radius: 20px;"></div>
-            <div style="margin-left:7px;width: 50px;height: 5px;background-color:rgb(145, 89, 197);border-radius: 20px;">
+  <div class="text-white text-center pt-5">
+    <h5 style="font-family: sans-serif;color:rgb(145, 89, 197);">DON'T BE SHY !</h5>
+    <h1 style="padding-bottom: 68px;font-weight: 800;text-transform: uppercase;">GET IN <span
+        style="color:rgb(145, 89, 197) ;">TOUCH</span></h1>
+    <div class="mb-4" style="justify-content: center;align-items: center;display: flex;margin-top: -50px;">
+      <div style="width: 25px;height: 5px;background-color:rgb(145, 89, 197);border-radius: 20px;"></div>
+      <div style="margin-left:7px;width: 50px;height: 5px;background-color:rgb(145, 89, 197);border-radius: 20px;">
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top:-20px;">
+    <div class="col-11 col-md-10 col-lg-8 col-xl-7 col-xxl-6 mx-auto">
+      <form class="form-class" id="contactform">
+        <div class="mb-3 row g-4" style="margin-top:10px">
+          <div class="col-12 col-md-10 col-lg-9 col-xxl-8 col-xl-8 mx-auto">
+            <input id="name" type="text" class="name-text" name="name" required placeholder="Name" style="outline: none;">
+          </div>
+        </div>
+
+        <div class="mb-3 row g-4" style="margin-top:6px">
+          <div class="col-12 col-md-10 col-lg-9 col-xxl-8 col-xl-8 mx-auto">
+            <input id="email" type="email" class="email-text" name="email" required placeholder="Email" style="outline: none;">
+          </div>
+        </div>
+
+        <div class="mb-3 row g-4" style="margin-top:6px">
+          <div class="col-12 col-md-10 col-lg-9 col-xxl-8 col-xl-8 mx-auto">
+            <input type="text" id="phone" class="phone-text" name="phone" required placeholder="Phone No." style="outline: none;">
+          </div>
+        </div>
+
+        <div>
+          <div class="col-12 col-md-10 col-lg-9 col-xxl-8 col-xl-8 mx-auto">
+            <div class="mt-4 mb-3">
+              <h5 class="label-msg" style="padding-bottom: 10px;font-size: 1rem ;font-family: sans-serif;">
+                Message Box
+              </h5>
+              <textarea class="msg-text" id="message" name="message" rows="4" cols="30" required
+                style="outline:none;padding-left:7px"></textarea>
             </div>
+            <div class="mb-4">
+              <button class="BTN" type="submit">Submit</button>
+            </div>
+          </div>
         </div>
+      </form>
     </div>
-
-    <div class="row" style="margin-top:-20px;">
-        <div class="col-11 col-md-10 col-lg-8 col-xl-7 col-xxl-6 mx-auto">
-            <form id="contactform">
-                <div class="mb-3 row g-4" style="margin-top:10px">
-                    <div class="col-12 col-md-10 col-lg-9 col-xxl-8 col-xl-8 mx-auto">
-                        <input id="name" type="text" class="name-text" name="user_name" required placeholder="Name"
-                            style="outline: none;">
-                    </div>
-                </div>
-
-                <div class="mb-3 row g-4" style="margin-top:6px">
-                    <div class="col-12 col-md-10 col-lg-9 col-xxl-8 col-xl-8 mx-auto">
-                        <input id="email" type="email" class="email-text" name="user_email" required placeholder="Email"
-                            style="outline: none;">
-                    </div>
-                </div>
-
-                <div class="mb-3 row g-4" style="margin-top:6px">
-                    <div class="col-12 col-md-10 col-lg-9 col-xxl-8 col-xl-8 mx-auto">
-                        <input type="text" id="phone" class="phone-text" name="user_phone" required
-                            placeholder="Phone No." style="outline: none;">
-                    </div>
-                </div>
-
-                <div>
-                    <div class="col-12 col-md-10 col-lg-9 col-xxl-8 col-xl-8 mx-auto">
-                        <div class="mt-4 mb-3">
-                            <h5 class="label-msg"
-                                style="padding-bottom: 10px;font-size: 1rem ;font-family: sans-serif;">
-                                Message Box
-                            </h5>
-                            <textarea class="msg-text" id="message" name="message" rows="4" cols="30" required
-                                style="outline:none;padding-left:7px"></textarea>
-                        </div>
-                        <div class="mb-4">
-                            <button type="submit" class="BTN">Submit</button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
+  </div>
 </div>
+
     <!--Query Section End-->
     <!--Footer Start-->
     <div class="container-fluid  my-5 mb-0 FOOTER text-center mx-auto " style="overflow-x: hidden;">
@@ -856,25 +853,24 @@
             loop: true
         })
     </script>
-    <!-- Include EmailJS SDK -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script>
-  (function () {
-    emailjs.init("SeDNis84J5xyzGET3"); // Public Key
-  })();
-</script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("SeDNis84J5xyzGET3");
+      })();
+    </script>
 <!-- EmailJS Handler -->
+<!-- EmailJS Submission Script -->
 <script>
-    const form = document.getElementById('contactform');
-    form.addEventListener('submit', function (e) {
+    document.getElementById('contactform').addEventListener('submit', function (e) {
       e.preventDefault();
   
       emailjs.sendForm('service_3egddzm', 'template_uzlttuk', this)
-        .then(() => {
-          alert('Message sent successfully!');
-          form.reset();
-        }, (error) => {
-          alert('FAILED TO SEND\n' + JSON.stringify(error));
+        .then(function () {
+          alert('Message sent successfully! ✅');
+          document.getElementById('contactform').reset();
+        }, function (error) {
+          alert('Something went wrong ❌\n' + JSON.stringify(error));
         });
     });
   </script>
